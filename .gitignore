@@ -1,0 +1,17 @@
+.env
+.env.*
+venv/
+__pycache__/
+*.pyc
+data/*.db
+*.sqlite
+*.sqlite3
+uploads/*
+!uploads/.gitkeep
+.pytest_cache/
+.DS_Store
+# Allow the example configuration file
+!.env.example
+
+# Ignore database files in every folder
+**/*.db
