@@ -27,3 +27,5 @@ _load_env_file()
 # Secrets are read ONLY on the server. The frontend never sees them.
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+# Secret key used to secure user login sessions.
+SECRET_KEY = os.environ.get("SECRET_KEY") or os.urandom(32)
